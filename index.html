@@ -5,16 +5,17 @@
   <script data-require="angular.js@1.6.1" data-semver="1.6.1" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
   <link rel="stylesheet" href="style.css" />
   <script src="script.js"></script>
+  <script src="github.js"></script>
 </head>
 
 <body ng-controller="MainController">
 
-  <h1>{{message}}</h1>
+  <h1>{{ message }}</h1>
 
   <div>
     {{ error }}
   </div>
-
+  {{ countdown }}
   <form name="searchUser" ng-submit="search(username)">
     <input type="search" required placeholder="Type username to find" ng-model="username" />
     <input type="submit" value="Search">
