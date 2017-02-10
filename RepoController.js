@@ -18,5 +18,5 @@
 
         github.getRepoDetails(username, reponame)
               .then(onRepo, onError);
-    };
+    });
 }());
